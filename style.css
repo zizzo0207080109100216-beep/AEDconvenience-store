@@ -1,0 +1,110 @@
+/* CSS: CodePenのCSS欄へ */
+/* パステル基調のやさしいデザイン */
+:root{
+  --bg: #fbf9ff;
+  --card: #ffffff;
+  --accent: #bde0fe;
+  --accent2: #ffd6e0;
+  --text: #2e2e2e;
+  --muted: #7b7b7b;
+  --radius: 14px;
+}
+
+*{box-sizing:border-box}
+body{
+  margin:0;
+  padding:32px;
+  font-family: "Noto Sans JP", "Helvetica Neue", Arial, sans-serif;
+  background: linear-gradient(180deg, var(--bg), #fff);
+  color: var(--text);
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  min-height:100vh;
+}
+
+.container{
+  width:100%;
+  max-width:760px;
+  background:var(--card);
+  border-radius:18px;
+  box-shadow: 0 8px 30px rgba(34,34,34,0.08);
+  padding:28px;
+}
+
+.title{
+  margin:8px 0 6px;
+  font-size:28px;
+  letter-spacing:0.4px;
+}
+.subtitle{
+  margin:0 0 18px;
+  color:var(--muted);
+}
+
+.screen{ text-align:center; padding:10px 6px; }
+.hidden{ display:none; }
+
+.grid{
+  display:flex;
+  flex-wrap:wrap;
+  gap:10px;
+  justify-content:center;
+  margin:16px 0 8px;
+}
+
+button{
+  border: none;
+  cursor:pointer;
+  border-radius:12px;
+  padding:10px 14px;
+  font-size:15px;
+  box-shadow: 0 6px 12px rgba(30,30,30,0.06);
+}
+
+.big-btn{
+  padding:12px 26px;
+  font-size:18px;
+  background: linear-gradient(180deg,var(--accent), #9fd7ff);
+  color:#063347;
+  border-radius:18px;
+}
+
+.small-btn{
+  background:#f3f6ff;
+  color:var(--text);
+  padding:8px 12px;
+}
+
+.region-btn{
+  min-width:160px;
+  max-width:200px;
+  background: linear-gradient(180deg, #fff, #fbfbff);
+  border-radius:14px;
+  padding:12px 14px;
+  box-shadow: 0 6px 10px rgba(20,20,20,0.04);
+}
+
+.pref-btn, .city-btn{
+  min-width:140px;
+  background:#fff7f9;
+}
+
+.result-list{
+  list-style:none;
+  padding:0;
+  margin:8px 0 12px;
+  max-height:260px;
+  overflow:auto;
+  text-align:left;
+}
+
+.result-list li{
+  background:linear-gradient(90deg,#fff,#fffefe);
+  padding:10px 12px;
+  margin:8px 12px;
+  border-radius:12px;
+  border:1px solid #f0f0f6;
+}
+
+.footer{ margin-top:12px; color:var(--muted); text-align:center; font-size:12px; }

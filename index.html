@@ -1,0 +1,45 @@
+<div id="game" class="container">
+  <section id="start-screen" class="screen">
+    <h1 class="title">AED設置コンビニを探せ！</h1>
+    <p class="subtitle">地域を選んで、AEDを置いているコンビニを見つけよう</p>
+    <button id="start-btn" class="big-btn">スタート</button>
+  </section>
+
+  <section id="region-screen" class="screen hidden">
+    <h2>地域を選んでください</h2>
+    <div id="region-list" class="grid"></div>
+    <div class="controls">
+      <button id="back-from-region" class="small-btn">戻る</button>
+    </div>
+  </section>
+
+  <section id="prefecture-screen" class="screen hidden">
+    <h2 id="prefecture-heading">都道府県を選んでください</h2>
+    <div id="prefecture-list" class="grid"></div>
+    <div class="controls">
+      <button id="back-from-pref" class="small-btn">戻る</button>
+    </div>
+  </section>
+
+  <section id="city-screen" class="screen hidden">
+    <h2 id="city-heading">市町村を選んでください</h2>
+    <div id="city-list" class="grid"></div>
+    <div class="controls">
+      <button id="back-from-city" class="small-btn">戻る</button>
+    </div>
+  </section>
+
+  <section id="result-screen" class="screen hidden">
+    <h2>AED設置コンビニ</h2>
+    <p id="result-info"></p>
+    <ul id="result-list" class="result-list"></ul>
+    <div class="controls">
+      <button id="retry-btn" class="small-btn">別の場所を探す</button>
+      <button id="copy-btn" class="small-btn">店舗名をコピー</button>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <small>データはユーザー提供のリストに基づく（該当不明は空）。拡張・更新可。</small>
+  </footer>
+</div>
